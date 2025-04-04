@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #034417;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+        transform: translateY(-20px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0);
+    }
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #034417;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6)
+}
+
+button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+.resultContainer {
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-10px);}
+    100% {opacity: 1; transform: translateY(0px);}
+}
+
+#wordDescription {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+#audioContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#audioBtn {
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#audioBtn:hover {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    color: #034417;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 360px;
+    }
+}
